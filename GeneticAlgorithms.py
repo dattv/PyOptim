@@ -18,13 +18,17 @@ class GA():
         self.width = width
 
     def selection(self):
-        self.population = np.random.uniform(self.minimum, self.maximum, self.population_num)
+        if self.population is None:
+            self.population = np.random.uniform(self.minimum, self.maximum, self.population_num)
 
         y = self.object_func(self.population)
 
-        out_array = np.argsort(y)
 
-        return self.population[out_array[-int(self.population_num / 2):]]
+        out_array = np.argsort(y)
+        x = self.population[out_array[0]]
+
+        self.population = self.population[out_array[:int(self.population_num / 2)]]
+        return x, y[out_array[0]]
 
     def mutation(self, string):
         index_mutation = np.random.randint(0, self.width)
@@ -34,7 +38,8 @@ class GA():
 
         return string[:index_mutation] + temp + string[index_mutation+1:]
 
-    def cross_over(self, childeren_float):
+    def cross_over(self):
+        childeren_float = self.population
         if self.population is not None:
             if self.width == 32:
                 iiwidth = np.iinfo(np.int32)
@@ -63,16 +68,18 @@ class GA():
 
             new_pop_int = [int(string, 2) for string in str_array]
 
-            new_pop_float = np.interp(new_pop_int, (min_int, max_int), (self.minimum, self.maximum)).astype(np.float32)
+            self.population = np.interp(new_pop_int, (min_int, max_int), (self.minimum, self.maximum)).astype(np.float32)
 
-        return new_pop_float
 
     def __call__(self):
         """
 
         :return:
         """
-        childeren_float = self.selection()
 
-        new_prop = self.cross_over(childeren_float)
+        error, min_error = self.selection()
+
+        self.cross_over()
+
+        return error, min_error
 

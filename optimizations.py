@@ -21,9 +21,20 @@ def main():
     y = poly.poly(x)
 
     optim = GA(10, poly.poly, minimum, maximum, width=32)
-    optim()
+
+    x_err = []
+    min_err = []
+    for i in range(100):
+        x_error, min_error = optim()
+        print(x_error, min_error)
+
+        x_err.append(x_error)
+        min_err.append(min_error)
+
+
 
     pyplot.plot(x, y, 'g-')
+    pyplot.plot(x_err, min_err, 'ro')
     pyplot.ylabel('polynomial_func')
     pyplot.show()
 
