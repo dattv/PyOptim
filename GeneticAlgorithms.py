@@ -1,85 +1,35 @@
-from __future__ import absolute_import
-from __future__ import division
 from __future__ import print_function
+from __future__ import division
+from __future__ import absolute_import
 
-import numpy as np
-
+import numpy
 
 class GA():
-    def __init__(self, population_num, object_func, minimum, maximum, width=64):
+    def __init__(self, init_pop, cost_func, go_min=True):
         """
 
+        :param init_pop:
+        :param cost_func:
+        :param go_min:
         """
-        self.population_num = population_num
-        self.object_func = object_func
-        self.minimum = minimum
-        self.maximum = maximum
-        self.population = None
-        self.width = width
 
-    def selection(self):
-        if self.population is None:
-            self.population = np.random.uniform(self.minimum, self.maximum, self.population_num)
+        self._init_pop = init_pop
+        self._cost_func = cost_func
+        self._go_min = go_min
+        self._num_select = len(self._init_pop) / 2
 
-        y = self.object_func(self.population)
-
-
-        out_array = np.argsort(y)
-        x = self.population[out_array[0]]
-
-        self.population = self.population[out_array[:int(self.population_num / 2)]]
-        return x, y[out_array[0]]
-
-    def mutation(self, string):
-        index_mutation = np.random.randint(0, self.width)
-        temp = string[index_mutation]
-        temp = str(int(np.logical_not(bool(int(temp)))))
-
-
-        return string[:index_mutation] + temp + string[index_mutation+1:]
-
-    def cross_over(self):
-        childeren_float = self.population
-        if self.population is not None:
-            if self.width == 32:
-                iiwidth = np.iinfo(np.int32)
-            else:
-                iiwidth = np.iinfo(np.int64)
-
-            max_int = iiwidth.max
-            min_int = iiwidth.min
-            childeren_int = np.rint(
-                np.interp(childeren_float, (self.minimum, self.maximum), (min_int, max_int))).astype(iiwidth.dtype)
-            str_array = [np.binary_repr(sample, width=self.width) for sample in childeren_int]
-
-            np.random.shuffle(str_array)
-
-            for i in range(0, int(self.population_num / 2), 2):
-                index = np.random.randint(1, self.width - 1)
-
-                string1 = str_array[i]
-                string2 = str_array[i + 1]
-                str_array.append(string1[:index] + string2[index:])
-                self.mutation(str_array[-1])
-                str_array.append(string2[:index] + string1[index:])
-                self.mutation(str_array[-1])
-
-            np.random.shuffle(str_array)
-
-            new_pop_int = [int(string, 2) for string in str_array]
-
-            self.population = np.interp(new_pop_int, (min_int, max_int), (self.minimum, self.maximum)).astype(np.float32)
-
-
-    def __call__(self):
+    def __str__(self):
         """
 
         :return:
         """
+        return self._init_pop
 
-        error, min_error = self.selection()
+    def _selection(self):
+        """
 
-        self.cross_over()
+        :return:
+        """
+        fitness = [self._cost_func(invidual) for invidual in self._init_pop]
 
-        return error, min_error
-
+        
