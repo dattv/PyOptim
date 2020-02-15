@@ -21,5 +21,5 @@ easy to realize that after 1000 step my implementation can reach higher value of
 |---|---|---|---|---|---|---|
 | best solution [Ahmed Gad](https://towardsdatascience.com/genetic-algorithm-implementation-in-python-5ab67bb124a6)  | 1.67171573e+00  | -3.71316424e+00 | 3.05233306e+02   | 2.11299501e+00 | -2.00224839e-01   | -3.27807311e+02 |  
 | best solution fitness [Ahmed Gad](https://towardsdatascience.com/genetic-algorithm-implementation-in-python-5ab67bb124a6)  | 2635.8915725  |   |   |   |   |   |
-| best solution [my]()  | 108.18044766  | -48.89323501  | 104.3551271  |  88.57507076 | -143.86504601  | -86.99125212  |
-| best solution fitness [my]()  | 3330.000950447867  |   |   |   |   |   |
+| best solution [my]()  | 109.35142938  | -58.62868893 | 60.66640886  |  105.50072658 | -171.52134765  | -81.86705169  |
+| best solution fitness [my]()  | 3566.0091264521807  |   |   |   |   |   |
