@@ -38,9 +38,18 @@ def cost_func(input):
 
 genetic_algs = ga.GA(new_population, cost_func=cost_func, go_min=False)
 
+fit = []
 for i in range(1000):
-    genetic_algs()
+    fitness, solution =  genetic_algs()
 
+    fit.append(fitness)
+
+import matplotlib.pyplot
+
+matplotlib.pyplot.plot(fit)
+matplotlib.pyplot.xlabel("Iteration")
+matplotlib.pyplot.ylabel("Fitness")
+matplotlib.pyplot.show()
 
 """
 new_population[0, :] = [2.4,  0.7, 8, -2,   5,   1.1]

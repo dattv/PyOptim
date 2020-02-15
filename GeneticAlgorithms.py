@@ -94,6 +94,7 @@ class GA():
 
         # do mutation operator
         self._init_pop = self._mutation(new_population, num_mutations=2)
+        return fitness[0], parent[0, :]
 
 
 import numpy
