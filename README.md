@@ -13,7 +13,7 @@ result from [Ahmed Gad](https://towardsdatascience.com/genetic-algorithm-impleme
 
 |   |   |   |   |   |   |   |
 |---|---|---|---|---|---|---|
-| best solution [Ahmed Gad](https://towardsdatascience.com/genetic-algorithm-implementation-in-python-5ab67bb124a6)  | 3.76815555  | -1.52148373  | 274.3715455  | 3.58836686  | -3.98792954  |    
-| best solution fitness [Ahmed Gad](https://towardsdatascience.com/genetic-algorithm-implementation-in-python-5ab67bb124a6)  | 2649.2495477  |   |   |   |   |   |
+| best solution [Ahmed Gad](https://towardsdatascience.com/genetic-algorithm-implementation-in-python-5ab67bb124a6)  | 1.67171573e+00  | -3.71316424e+00 | 3.05233306e+02   | 2.11299501e+00 | -2.00224839e-01   | -3.27807311e+02 |  
+| best solution fitness [Ahmed Gad](https://towardsdatascience.com/genetic-algorithm-implementation-in-python-5ab67bb124a6)  | 2635.8915725  |   |   |   |   |   |
 | best solution [my]()  | 108.18044766  | -48.89323501  | 104.3551271  |  88.57507076 | -143.86504601  | -86.99125212  |
 | best solution fitness [my]()  | 3330.000950447867  |   |   |   |   |   |
