@@ -9,8 +9,5 @@ problem:
 maximizing equation 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;Y=\overrightarrow{W}\cdot\overrightarrow{X}" title="\Large Y=\overrightarrow{W}\cdot\overrightarrow{X}" />
 
-in there: <img src="https://latex.codecogs.com/svg.latex?\Large&space;\overrightarrow{W}= \left[ {\begin{array}{cc}
-   1 & 2 \\
-   3 & 4 \\
-  \end{array} } \right]" title="" />
+in there: <img src="https://latex.codecogs.com/svg.latex?\Large&space;\overrightarrow{W}=[4, -2, 3.5, 5, -11, -4.7]" title="\Large Y=\overrightarrow{W}\cdot\overrightarrow{X}" />
 
