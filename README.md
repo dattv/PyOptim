@@ -9,7 +9,7 @@ problem:
 maximizing equation 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;Y=\overrightarrow{W}\cdot\overrightarrow{X}" title="\Large Y=\overrightarrow{W}\cdot\overrightarrow{X}" />
 
-Solarized dark             |  Solarized Ocean
+My fitness history             |  [Ahmed Grad fitness history](https://towardsdatascience.com/genetic-algorithm-implementation-in-python-5ab67bb124a6)
 :-------------------------:|:-------------------------:
 <img src="https://github.com/dattv/PyOptim/blob/master/results/GA/my/my_fitness.png" width="400" height="400"> |<img src="https://github.com/dattv/PyOptim/blob/master/results/GA/references/Ahmed%20Gad_fitness.png" width="400" height="400">
 
