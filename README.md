@@ -5,14 +5,12 @@ Implement Some Optimization Algorithm For Finding Minimal Point of Polynomial Cu
 In this document, I try to re-implement [GA](https://en.wikipedia.org/wiki/Genetic_algorithm),
 based on my understanding about this method and [Genetic Algorithm Implementation in Python](https://towardsdatascience.com/genetic-algorithm-implementation-in-python-5ab67bb124a6).
 
-'''flow
-st=>start: Start
-op=>operation: Your Operation
-cond=>condition: Yes or No?
-e=>end
+problem:
+maximizing equation 
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;Y=\overrightarrow{W}\cdot\overrightarrow{X}" title="\Large Y=\overrightarrow{W}\cdot\overrightarrow{X}" />
 
-st->op->cond
-cond(yes)->e
-cond(no)->op
-'''
+in there: <img src="https://latex.codecogs.com/svg.latex?\Large&space;\overrightarrow{W}= \left[ {\begin{array}{cc}
+   1 & 2 \\
+   3 & 4 \\
+  \end{array} } \right]" title="" />
 
