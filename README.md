@@ -9,4 +9,11 @@ problem:
 maximizing equation 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;Y=\overrightarrow{W}\cdot\overrightarrow{X}" title="\Large Y=\overrightarrow{W}\cdot\overrightarrow{X}" />
 
-d
+result from [Ahmed Gad](https://towardsdatascience.com/genetic-algorithm-implementation-in-python-5ab67bb124a6)
+
+|   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|
+| best solution [Ahmed Gad](https://towardsdatascience.com/genetic-algorithm-implementation-in-python-5ab67bb124a6)  | 3.76815555  | -1.52148373  | 274.3715455  | 3.58836686  | -3.98792954  |    
+| best solution fitness [Ahmed Gad](https://towardsdatascience.com/genetic-algorithm-implementation-in-python-5ab67bb124a6)  | 2649.2495477  |   |   |   |   |   |
+| best solution [my]()  | 108.18044766  | -48.89323501  | 104.3551271  |  88.57507076 | -143.86504601  | -86.99125212  |
+| best solution fitness [my]()  | 3330.000950447867  |   |   |   |   |   |
