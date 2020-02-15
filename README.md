@@ -9,7 +9,8 @@ problem:
 maximizing equation 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;Y=\overrightarrow{W}\cdot\overrightarrow{X}" title="\Large Y=\overrightarrow{W}\cdot\overrightarrow{X}" />
 
-comparison between my result and [Ahmed Gad](https://towardsdatascience.com/genetic-algorithm-implementation-in-python-5ab67bb124a6)
+comparison between my result and [Ahmed Gad](https://towardsdatascience.com/genetic-algorithm-implementation-in-python-5ab67bb124a6) after 1000 step.
+easy to realize that after 1000 step my implementation can reach higher value of equation above.
 
 |   |   |   |   |   |   |   |
 |---|---|---|---|---|---|---|
