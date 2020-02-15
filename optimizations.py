@@ -30,6 +30,18 @@ pop_size = (sol_per_pop,
 new_population = numpy.random.uniform(low=-4.0, high=4.0, size=pop_size)
 print(new_population)
 
+
+def cost_func(input):
+    x = numpy.array([4, -2, 3.5, 5, -11, -4.7])
+    return numpy.sum(x*input)
+
+
+genetic_algs = ga.GA(new_population, cost_func=cost_func, go_min=False)
+
+for i in range(1000):
+    genetic_algs()
+
+
 """
 new_population[0, :] = [2.4,  0.7, 8, -2,   5,   1.1]
 new_population[1, :] = [-0.4, 2.7, 5, -1,   7,   0.1]
