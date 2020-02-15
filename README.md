@@ -9,8 +9,9 @@ problem:
 maximizing equation 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;Y=\overrightarrow{W}\cdot\overrightarrow{X}" title="\Large Y=\overrightarrow{W}\cdot\overrightarrow{X}" />
 
-<img src="https://github.com/dattv/PyOptim/blob/master/results/GA/my/my_fitness.png" width="400" height="400">
-<img src="https://github.com/dattv/PyOptim/blob/master/results/GA/references/Ahmed%20Gad_fitness.png" width="400" height="400">
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+<img src="https://github.com/dattv/PyOptim/blob/master/results/GA/my/my_fitness.png" width="400" height="400"> |<img src="https://github.com/dattv/PyOptim/blob/master/results/GA/references/Ahmed%20Gad_fitness.png" width="400" height="400">
 
 
 comparison between my result and [Ahmed Gad](https://towardsdatascience.com/genetic-algorithm-implementation-in-python-5ab67bb124a6) after 1000 step.
