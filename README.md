@@ -20,9 +20,9 @@ easy to realize that after 1000 step my implementation can reach higher value of
 
 |   |   |   |   |   |   |   |
 |---|---|---|---|---|---|---|
-| best solution [Ahmed Gad](https://towardsdatascience.com/genetic-algorithm-implementation-in-python-5ab67bb124a6)  | 1.67171573e+00  | -3.71316424e+00 | 3.05233306e+02   | 2.11299501e+00 | -2.00224839e-01   | -3.27807311e+02 |  
+| best solution [Ahmed Gad](https://towardsdatascience.com/genetic-algorithm-implementation-in-python-5ab67bb124a6)  |x1 = 1.67171573e+00  |x2 = -3.71316424e+00 |x3 = 3.05233306e+02   |x4 = 2.11299501e+00 |x5 = -2.00224839e-01   |x6 = -3.27807311e+02 |  
 | best solution fitness [Ahmed Gad](https://towardsdatascience.com/genetic-algorithm-implementation-in-python-5ab67bb124a6)  | 2635.8915725  |   |   |   |   |   |
-| best solution [my]()  | 109.35142938  | -58.62868893 | 60.66640886  |  105.50072658 | -171.52134765  | -81.86705169  |
+| best solution [my]()  |x1 = 109.35142938  |x2 = -58.62868893 |x3 = 60.66640886  |x4 = 105.50072658 |x5 = -171.52134765  |x6 = -81.86705169  |
 | best solution fitness [my]()  | 3566.0091264521807  |   |   |   |   |   |
 
 
@@ -33,6 +33,6 @@ My fitness history             |
 
 |   |   |   |   |   |   |   |
 |---|---|---|---|---|---|---|
-| best solution [my]()  | 1.e+10  | -1.e+10 | 1.e+10  |  1.e+10 | -1.e+10  | -1.e+10  |
+| best solution [my]()  |x1 = 1.e+10  |x2 = -1.e+10 |x3 = 1.e+10  |x4 =  1.e+10 |x5 = -1.e+10  |x6 = -1.e+10  |
 | best solution fitness [my]()  | 302000000000.0  |   |   |   |   |   |
 
