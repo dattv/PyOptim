@@ -1,5 +1,7 @@
 import numpy
 import GeneticAlgorithms as ga
+import ParticalSwarmOptm as PSO
+import sys
 
 """
 The y=target is to maximize this equation ASAP:
@@ -21,6 +23,7 @@ Genetic algorithm parameters:
     Population size
 """
 sol_per_pop = 8
+# sol_per_pop = 15
 num_parents_mating = 4
 
 # Defining the population size.
@@ -38,11 +41,21 @@ def cost_func(input):
 
 genetic_algs = ga.GA(new_population, cost_func=cost_func, go_min=False)
 
+
+bounds = []
+for i in range(sol_per_pop):
+    bounds.append([-1.e10, 1.e10])
+
+PSO_algs = PSO.PSO(new_population, costFunc=cost_func, bounds=bounds, num_particles=sol_per_pop, go_min=False)
+
+
 fit = []
 for i in range(1000):
-    fitness, solution =  genetic_algs()
-
-    fit.append(fitness)
+    fit.append(PSO_algs())
+    #
+    # fitness, solution = genetic_algs()
+    #
+    # fit.append(fitness)
 
 import matplotlib.pyplot
 
