@@ -117,5 +117,5 @@ class PSO():
             self._err_best_g = -self._err_best_g
 
         print(self._err_best_g)
-        # print(self._pos_best_g)
+        print(self._pos_best_g)
         return self._err_best_g
